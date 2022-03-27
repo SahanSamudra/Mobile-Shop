@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReturnItemController">
+   <children>
+      <AnchorPane prefHeight="900.0" prefWidth="1200.0" styleClass="dashboard-colour2" stylesheets="@../style/styles.css">
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="880.0" prefWidth="1180.0" style="-fx-background-color: white;" styleClass="button-" stylesheets="@../style/styles.css">
+               <children>
+                  <TableView fx:id="tblReturn" layoutX="10.0" layoutY="449.0" prefHeight="407.0" prefWidth="1160.0">
+                    <columns>
+                      <TableColumn fx:id="colReturnID" prefWidth="115.0" text="Return ID" />
+                      <TableColumn fx:id="colCustomerIdR" prefWidth="142.99996948242188" text="Customer ID" />
+                        <TableColumn fx:id="colItemCodeR" prefWidth="160.0" text="Item Code" />
+                        <TableColumn fx:id="colReturnReason" prefWidth="190.0" text="Return Reason" />
+                        <TableColumn fx:id="colBilingDateR" prefWidth="264.0" text="Billing Date" />
+                        <TableColumn fx:id="colReturnDate" prefWidth="149.0" text="Return Date" />
+                        <TableColumn fx:id="colWarrantyDueR" prefWidth="213.0" text="Warranty Due" />
+                    </columns>
+                  </TableView>
+                  <JFXTextField fx:id="txtReturnID" labelFloat="true" layoutX="87.0" layoutY="101.0" onKeyPressed="#KeyPressReturn" prefHeight="31.0" prefWidth="355.0" promptText="Return ID" />
+                  <JFXTextField fx:id="txtWarrantyDueR" labelFloat="true" layoutX="79.0" layoutY="178.0" onKeyPressed="#KeyPressReturn" prefHeight="31.0" prefWidth="355.0" promptText="Warranty Dueration" />
+                  <JFXComboBox fx:id="cmbCustomerIdR" labelFloat="true" layoutX="486.0" layoutY="251.0" prefHeight="31.0" prefWidth="355.0" promptText="Customer ID" />
+                  <JFXDatePicker fx:id="dpBillingDateR" layoutX="486.0" layoutY="326.0" prefHeight="31.0" prefWidth="355.0" promptText="Billing Date" />
+                  <JFXDatePicker fx:id="dpReturnDateR" layoutX="87.0" layoutY="326.0" prefHeight="31.0" prefWidth="355.0" promptText="Return Date" />
+                  <JFXTextField fx:id="txtReturnReason" labelFloat="true" layoutX="486.0" layoutY="178.0" onKeyPressed="#KeyPressReturn" prefHeight="31.0" prefWidth="355.0" promptText="Return Reason" />
+                  <JFXComboBox fx:id="cmbItemCodeR" labelFloat="true" layoutX="79.0" layoutY="251.0" prefHeight="31.0" prefWidth="355.0" promptText="Item Code" />
+                  <JFXButton layoutX="457.0" layoutY="100.0" onAction="#btnSearchId" stylesheets="@../style/styles.css" text="Search" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn-Search" />
+                        <String fx:value="button-" />
+                     </styleClass>
+                  </JFXButton>
+               </children></AnchorPane>
+            <Label alignment="CENTER" layoutX="20.0" layoutY="20.0" prefHeight="60.0" prefWidth="1160.0" stylesheets="@../style/styles.css" text="Return Item" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="dashboard-colour2" />
+                  <String fx:value="button2--" />
+               </styleClass>
+            </Label>
+            <Label layoutX="24.0" layoutY="391.0" prefHeight="60.0" prefWidth="1152.0" styleClass="dashboard-colour2" stylesheets="@../style/styles.css" />
+            <Button fx:id="btnSave" layoutX="976.0" layoutY="118.0" mnemonicParsing="false" onAction="#btnSaveRitem" prefHeight="51.0" prefWidth="187.0" styleClass="dashboard-colour2" stylesheets="@../style/styles.css" text="save" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="976.0" layoutY="202.0" mnemonicParsing="false" onAction="#btnUpdateRitem" prefHeight="51.0" prefWidth="187.0" styleClass="btn-Update" stylesheets="@../style/styles.css" text="update" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="976.0" layoutY="287.0" mnemonicParsing="false" onAction="#btnDeleteRitem" prefHeight="51.0" prefWidth="187.0" styleClass="btn-Delete" stylesheets="@../style/styles.css" text="delete" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Bernard MT Condensed" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

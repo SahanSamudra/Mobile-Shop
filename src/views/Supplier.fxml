@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplierController">
+   <children>
+      <AnchorPane prefHeight="900.0" prefWidth="1200.0" styleClass="dashboard-colour2" stylesheets="@../style/styles.css">
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="880.0" prefWidth="1180.0" style="-fx-background-color: white;" styleClass="button-" stylesheets="@../style/styles.css">
+               <children>
+                  <TableView fx:id="tblSupplier" layoutX="10.0" layoutY="442.0" prefHeight="409.0" prefWidth="1160.0">
+                    <columns>
+                      <TableColumn fx:id="colSiD" prefWidth="155.99996948242188" text="Supplier ID" />
+                        <TableColumn fx:id="colSNic" prefWidth="153.0" text="Nic" />
+                      <TableColumn fx:id="colSName" prefWidth="288.0000305175781" text="    Name" />
+                        <TableColumn fx:id="colSContact" prefWidth="268.0" text="Contact" />
+                        <TableColumn fx:id="colSAddress" prefWidth="199.0" text="Address" />
+                        <TableColumn fx:id="colSCompany" prefWidth="169.0" text="Company" />
+                    </columns>
+                  </TableView>
+                  <JFXTextField fx:id="txtSId" labelFloat="true" layoutX="68.0" layoutY="117.0" onKeyReleased="#SupKeyPress" promptText="Supplier ID" />
+                  <JFXTextField fx:id="txtSAddress" labelFloat="true" layoutX="68.0" layoutY="204.0" onKeyReleased="#SupKeyPress" promptText="Addresss" />
+                  <JFXTextField fx:id="txtSName" labelFloat="true" layoutX="353.0" layoutY="117.0" onKeyReleased="#SupKeyPress" promptText="Name" />
+                  <JFXTextField fx:id="txtSNic" labelFloat="true" layoutX="625.0" layoutY="117.0" onKeyReleased="#SupKeyPress" promptText="NIC" />
+                  <JFXTextField fx:id="txtSContact" labelFloat="true" layoutX="353.0" layoutY="204.0" onKeyReleased="#SupKeyPress" promptText="Contact" />
+                  <JFXTextField fx:id="txtSCompany" labelFloat="true" layoutX="625.0" layoutY="204.0" onKeyReleased="#SupKeyPress" promptText="Company" />
+                  <JFXButton layoutX="246.0" layoutY="117.0" onAction="#btnSearchCus" stylesheets="@../style/styles.css" text="Search" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn-Search" />
+                        <String fx:value="button-" />
+                     </styleClass>
+                  </JFXButton>
+               </children></AnchorPane>
+            <Label alignment="CENTER" layoutX="20.0" layoutY="20.0" prefHeight="60.0" prefWidth="1160.0" stylesheets="@../style/styles.css" text="Supplier" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="dashboard-colour2" />
+                  <String fx:value="button2--" />
+               </styleClass>
+            </Label>
+            <Label layoutX="24.0" layoutY="367.0" prefHeight="60.0" prefWidth="1152.0" styleClass="dashboard-colour2" stylesheets="@../style/styles.css" />
+            <Button fx:id="btnSave" layoutX="976.0" layoutY="107.0" mnemonicParsing="false" onAction="#btnSupplierSave" prefHeight="51.0" prefWidth="187.0" styleClass="dashboard-colour2" stylesheets="@../style/styles.css" text="save" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="976.0" layoutY="192.0" mnemonicParsing="false" onAction="#btnUpdateSupplier" prefHeight="51.0" prefWidth="187.0" styleClass="btn-Update" stylesheets="@../style/styles.css" text="update" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="976.0" layoutY="271.0" mnemonicParsing="false" onAction="#btnDeleteSupplier" prefHeight="51.0" prefWidth="187.0" styleClass="btn-Delete" stylesheets="@../style/styles.css" text="delete" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Bernard MT Condensed" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

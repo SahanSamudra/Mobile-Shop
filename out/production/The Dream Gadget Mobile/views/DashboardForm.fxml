@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DashboardFormContext" prefHeight="900.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <AnchorPane prefHeight="900.0" prefWidth="200.0" styleClass="dashboard-colour2" stylesheets="@../style/styles.css">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="190.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/MainIcon.PNG" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="200.0" prefHeight="70.0" prefWidth="200.0" text="      Dashboard" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="12.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icons8-windows-client-16.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="340.0" prefHeight="70.0" prefWidth="200.0" text="   Add Items" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="410.0" prefHeight="70.0" prefWidth="200.0" text="Reports" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="480.0" prefHeight="70.0" prefWidth="200.0" text="Repairs" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="550.0" prefHeight="70.0" prefWidth="200.0" text="      Return Item" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="620.0" prefHeight="70.0" prefWidth="200.0" text="Payment" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="270.0" prefHeight="70.0" prefWidth="200.0" text="   Customers" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="10.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/customer.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="51.0" layoutX="11.0" layoutY="354.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/additem.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="51.0" layoutX="14.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/reports.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="70.0" fitWidth="73.0" layoutX="-3.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/repairs.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="12.0" layoutY="567.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/return-xxl.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="15.0" layoutY="636.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/payment.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="690.0" prefHeight="70.0" prefWidth="200.0" text="Supplier" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="15.0" layoutY="702.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/suply.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="830.0" prefHeight="70.0" prefWidth="200.0" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="2.0" layoutY="842.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Logout.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="760.0" prefHeight="70.0" prefWidth="200.0" text="Orders" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="15.0" layoutY="770.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/purchase%20mobile.png" />
+               </image>
+            </ImageView>
+            <Button layoutY="830.0" mnemonicParsing="false" onAction="#btnLogOut" opacity="0.0" prefHeight="70.0" prefWidth="200.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button layoutY="760.0" mnemonicParsing="false" onAction="#btnOrders" opacity="0.03" prefHeight="70.0" prefWidth="200.0" text="purchase" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="690.0" mnemonicParsing="false" onAction="#btnSupplier" opacity="0.03" prefHeight="70.0" prefWidth="200.0" text="purchase" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button alignment="CENTER" layoutY="620.0" mnemonicParsing="false" onAction="#btnBilling" opacity="0.03" prefHeight="70.0" prefWidth="200.0" text="billing" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="550.0" mnemonicParsing="false" onAction="#btnReturnItem" opacity="0.03" prefHeight="70.0" prefWidth="200.0" text="return" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="480.0" mnemonicParsing="false" onAction="#btnRepair" opacity="0.03" prefHeight="70.0" prefWidth="200.0" text="repairs" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="410.0" mnemonicParsing="false" onAction="#btnReports" opacity="0.03" prefHeight="70.0" prefWidth="200.0" text="reports" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="340.0" mnemonicParsing="false" onAction="#btnAddItems" opacity="0.03" prefHeight="70.0" prefWidth="200.0" text="Add Item" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutY="270.0" mnemonicParsing="false" onAction="#btnCustomers" opacity="0.03" prefHeight="70.0" prefWidth="200.0" text="Customer" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <JFXButton layoutY="202.0" onAction="#btnDashBoard" opacity="0.16" prefHeight="70.0" prefWidth="200.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AllContext" layoutX="200.0" prefHeight="900.0" prefWidth="1200.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RepairController">
+   <children>
+      <AnchorPane prefHeight="900.0" prefWidth="1200.0" styleClass="dashboard-colour2" stylesheets="@../style/styles.css">
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="880.0" prefWidth="1180.0" style="-fx-background-color: white;" styleClass="button-" stylesheets="@../style/styles.css">
+               <children>
+                  <TableView fx:id="tblRepair" layoutX="14.0" layoutY="428.0" prefHeight="420.0" prefWidth="1152.0">
+                    <columns>
+                      <TableColumn fx:id="colRepairID" prefWidth="101.0" text="Repair ID" />
+                      <TableColumn fx:id="colCustomerIDRepair" prefWidth="119.99996948242188" text="Customer ID" />
+                        <TableColumn fx:id="colImeiRepair" prefWidth="75.0" text="IMEI" />
+                        <TableColumn fx:id="colBrandModelRepair" prefWidth="218.0" text="Mobile  Brand &amp; Model" />
+                        <TableColumn fx:id="colFaultType" prefWidth="132.0" text="Faoult Type" />
+                        <TableColumn fx:id="colFault" prefWidth="266.0" text="      Faoult" />
+                        <TableColumn fx:id="colBringDate" prefWidth="116.0" text="Bring Date" />
+                        <TableColumn fx:id="colDayToGive" prefWidth="124.0" text="The Day to Give" />
+                    </columns>
+                  </TableView>
+                  <JFXTextField fx:id="txtRepairID" labelFloat="true" layoutX="53.0" layoutY="87.0" onKeyPressed="#KeyPressR" prefHeight="31.0" prefWidth="320.0" promptText="Repair ID" />
+                  <JFXComboBox fx:id="cmbCustomerID" labelFloat="true" layoutX="547.0" layoutY="223.0" prefHeight="31.0" prefWidth="313.0" promptText="Customer ID" />
+                  <JFXComboBox fx:id="cmbFaultType" layoutX="53.0" layoutY="223.0" prefHeight="31.0" prefWidth="320.0" promptText="Foult Type" styleClass="jfx-autocomplete-popup" stylesheets="@../style/styles.css" />
+                  <JFXTextField fx:id="txtMobileImei" labelFloat="true" layoutX="53.0" layoutY="159.0" onKeyPressed="#KeyPressR" prefHeight="31.0" prefWidth="320.0" promptText="IMEI" />
+                  <JFXTextField fx:id="txtBrandModel" labelFloat="true" layoutX="543.0" layoutY="159.0" onKeyPressed="#KeyPressR" prefHeight="31.0" prefWidth="313.0" promptText="Mobile Brand &amp; Model" />
+                  <JFXTextField fx:id="txtFault" labelFloat="true" layoutX="543.0" layoutY="87.0" onKeyPressed="#KeyPressR" prefHeight="31.0" prefWidth="313.0" promptText="Foult" />
+                  <JFXDatePicker fx:id="dpBringDate" layoutX="42.0" layoutY="290.0" prefHeight="31.0" prefWidth="320.0" promptText="Bring Date" />
+                  <JFXDatePicker fx:id="dpDaytoGive" layoutX="543.0" layoutY="290.0" prefHeight="31.0" prefWidth="320.0" promptText="To Day To Give" />
+                  <Label layoutX="14.0" layoutY="357.0" prefHeight="60.0" prefWidth="1152.0" styleClass="dashboard-colour2" stylesheets="@../style/styles.css" />
+                  <JFXButton layoutX="387.0" layoutY="87.0" onAction="#btnRIdSearch" stylesheets="@../style/styles.css" text="Search" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="btn-Search" />
+                        <String fx:value="button-" />
+                     </styleClass>
+                  </JFXButton>
+               </children></AnchorPane>
+            <Label alignment="CENTER" layoutX="20.0" layoutY="20.0" prefHeight="60.0" prefWidth="1160.0" stylesheets="@../style/styles.css" text="Repair" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="dashboard-colour2" />
+                  <String fx:value="button2--" />
+               </styleClass>
+            </Label>
+            <Button fx:id="btnSave" layoutX="976.0" layoutY="111.0" mnemonicParsing="false" onAction="#btnSaveRepair" prefHeight="51.0" prefWidth="187.0" styleClass="dashboard-colour2" stylesheets="@../style/styles.css" text="save" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="976.0" layoutY="196.0" mnemonicParsing="false" onAction="#btnUpdateRepair" prefHeight="51.0" prefWidth="187.0" styleClass="btn-Update" stylesheets="@../style/styles.css" text="update" textFill="WHITE">
+               <font>
+                  <Font name="Bernard MT Condensed" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="976.0" layoutY="275.0" mnemonicParsing="false" onAction="#btnDeleteRepair" prefHeight="51.0" prefWidth="187.0" styleClass="btn-Delete" stylesheets="@../style/styles.css" text="delete" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Bernard MT Condensed" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

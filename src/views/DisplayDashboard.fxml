@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" styleClass="dashboard-colour2" stylesheets="@../style/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DisplayDashboardController">
+   <children>
+      <Label layoutX="14.0" layoutY="10.0" prefHeight="880.0" prefWidth="1180.0" style="-fx-background-color: white;" styleClass="button-" stylesheets="@../style/styles.css" />
+      <Label alignment="CENTER" layoutX="20.0" layoutY="20.0" prefHeight="60.0" prefWidth="1160.0" stylesheets="@../style/styles.css" text="Dash Board" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+         <styleClass>
+            <String fx:value="dashboard-colour2" />
+            <String fx:value="button2--" />
+         </styleClass>
+      </Label>
+      <Label layoutX="24.0" layoutY="89.0" prefHeight="790.0" prefWidth="696.0" style="-fx-background-color: #dfe4ea;" styleClass="button4" stylesheets="@../style/styles.css">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ImageView fitHeight="47.0" fitWidth="63.0" layoutX="460.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/dashboard.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="163.0" fitWidth="163.0" layoutX="62.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/customerss.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="497.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/tag-sold-2-1137672.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="189.0" fitWidth="187.0" layoutX="274.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/output-onlinepngtools%20(18).png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="54.0" layoutY="320.0" prefHeight="47.0" prefWidth="175.0" styleClass="combo-box" text="CUSTOMERS" textFill="#00a8ff">
+         <font>
+            <Font name="Comic Sans MS Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="495.0" layoutY="320.0" prefHeight="47.0" prefWidth="175.0" text="SOLD ITEMS" textFill="#00a8ff">
+         <font>
+            <Font name="Comic Sans MS Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="280.0" layoutY="320.0" prefHeight="47.0" prefWidth="175.0" text="PRODUCTS" textFill="#00a8ff">
+         <font>
+            <Font name="Comic Sans MS Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="163.0" fitWidth="167.0" layoutX="62.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/3500833.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="56.0" layoutY="687.0" prefHeight="47.0" prefWidth="175.0" styleClass="combo-box" text="Orders" textFill="#00a8ff">
+         <font>
+            <Font name="Comic Sans MS Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="197.0" fitWidth="273.0" layoutX="239.0" layoutY="492.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/output-onlinepngtools%20(21).png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="281.0" layoutY="687.0" prefHeight="47.0" prefWidth="175.0" text="Suppliers" textFill="#00a8ff">
+         <font>
+            <Font name="Comic Sans MS Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="81.0" layoutY="348.0" prefHeight="64.0" prefWidth="118.0" text="(       )" textFill="#0376ff">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCustomer" alignment="CENTER" layoutX="97.0" layoutY="348.0" prefHeight="64.0" prefWidth="87.0" textFill="#0376ff">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="267.0" fitWidth="266.0" layoutX="462.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/repaie.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="502.0" layoutY="687.0" prefHeight="47.0" prefWidth="175.0" text="Repairs" textFill="#00a8ff">
+         <font>
+            <Font name="Comic Sans MS Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRepairCount" alignment="CENTER" layoutX="546.0" layoutY="725.0" prefHeight="64.0" prefWidth="87.0" textFill="#0376ff">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="307.0" layoutY="725.0" prefHeight="64.0" prefWidth="118.0" text="(       )" textFill="#0376ff">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="526.0" layoutY="348.0" prefHeight="64.0" prefWidth="118.0" text="(       )" textFill="#0376ff">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="309.0" layoutY="348.0" prefHeight="64.0" prefWidth="118.0" text="(       )" textFill="#0376ff">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="725.0" prefHeight="64.0" prefWidth="118.0" text="(       )" textFill="#0376ff">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="526.0" layoutY="725.0" prefHeight="64.0" prefWidth="118.0" text="(       )" textFill="#0376ff">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSupplierCount" alignment="CENTER" layoutX="323.0" layoutY="725.0" prefHeight="64.0" prefWidth="87.0" textFill="#0376ff">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrder" alignment="CENTER" layoutX="100.0" layoutY="725.0" prefHeight="64.0" prefWidth="87.0" textFill="#0376ff">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblProducts" alignment="CENTER" layoutX="324.0" layoutY="348.0" prefHeight="64.0" prefWidth="87.0" textFill="#0376ff">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="733.0" layoutY="89.0" prefHeight="790.0" prefWidth="449.0" style="-fx-background-color: #ecf0f1;" styleClass="button4" stylesheets="@../style/styles.css">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <PieChart fx:id="PieChart" layoutX="738.0" layoutY="605.0" prefHeight="260.0" prefWidth="439.0" title="Monthly Sales">
+         <effect>
+            <DropShadow />
+         </effect>
+      </PieChart>
+      <AreaChart fx:id="areaChart" layoutX="733.0" layoutY="368.0" prefHeight="238.0" prefWidth="449.0" title="Weekly Sales Progress">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </AreaChart>
+      <Label fx:id="lblSoldItem" alignment="CENTER" layoutX="539.0" layoutY="348.0" prefHeight="64.0" prefWidth="87.0" textFill="#0376ff">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="mainChart" layoutX="733.0" layoutY="102.0" prefHeight="274.0" prefWidth="449.0" title="Stock">
+         <effect>
+            <DropShadow />
+         </effect></PieChart>
+      <Line endX="279.0" layoutX="894.0" layoutY="368.0" startX="-151.0" />
+      <Line endX="231.0" layoutX="941.0" layoutY="593.0" startX="-199.0" />
+   </children>
+</AnchorPane>
